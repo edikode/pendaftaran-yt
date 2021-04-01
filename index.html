@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav
         class="navbar navbar-expand-lg navbar-light bg-white shadow pt-4 pb-4"
       >
         <div class="container">
-          <a class="navbar-brand font-weight-bold" href="#">PPDB ONLINE</a>
+          <a class="navbar-brand font-weight-bold" href="index.html"
+            >PPDB ONLINE</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -33,12 +35,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link mr-3 active" href="#">TENTANG KAMI</a>
-              <a class="nav-item nav-link mr-3" href="#">STATISTIK</a>
-              <a class="nav-item nav-link mr-3" href="#">JADWAL</a>
-              <a class="nav-item nav-link mr-3" href="#">TESTIMONI</a>
-              <a class="nav-item nav-link mr-3" href="#">MASUK</a>
-              <a class="btn btn-danger rounded-pill" href="#">DAFTAR</a>
+              <a class="nav-item nav-link mr-3 active" href="#tentang"
+                >TENTANG KAMI</a
+              >
+              <a class="nav-item nav-link mr-3" href="#service">KEUNGGULAN</a>
+              <a class="nav-item nav-link mr-3" href="#statistik">STATISTIK</a>
+              <a class="nav-item nav-link mr-3" href="#testimoni">TESTIMONI</a>
+              <a class="nav-item nav-link mr-3" href="login.php">MASUK</a>
+              <a class="btn btn-danger rounded-pill" href="registrasi.php"
+                >DAFTAR</a
+              >
             </div>
           </div>
         </div>
@@ -59,7 +65,7 @@
               melalui website ini atau langsung datang ke tempat pendaftaran
             </p>
 
-            <a href="" class="btn btn-danger btn-lg rounded-pill"
+            <a href="registrasi.php" class="btn btn-danger btn-lg rounded-pill"
               >DAFTAR SEKARANG</a
             >
           </div>
@@ -68,14 +74,14 @@
               src="assets/img/image-hero.svg"
               alt="image hero"
               class="img-fluid d-block mx-auto"
-              style="max-height: 300px;"
+              style="max-height: 300px"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="service">
       <div class="container">
         <div class="text-center">
           <h3>
@@ -196,7 +202,7 @@
       </div>
     </section>
 
-    <section class="tentang">
+    <section id="tentang" class="tentang">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -244,7 +250,7 @@
       </div>
     </section>
 
-    <section class="bg-danger pt-5 pb-5">
+    <section id="statistik" class="bg-danger pt-5 pb-5">
       <div class="container">
         <p class="text-white text-center">STATISTIK PENDAFTAR GELOMBANG 2</p>
         <div class="row">
@@ -264,7 +270,7 @@
       </div>
     </section>
 
-    <section class="alumni">
+    <section id="testimoni" class="alumni">
       <div class="container">
         <h3 class="text-center font-weight-bold mb-3">Apa Kata Alumni</h3>
         <p class="text-center mb-4">
@@ -285,9 +291,7 @@
                   dengan usaha yang saya bangun di sekolah.
                 </p>
 
-                <p class="font-weight-bold text-center mb-0">
-                  EDI SISWANTO
-                </p>
+                <p class="font-weight-bold text-center mb-0">EDI SISWANTO</p>
                 <span class="text-muted">Web Developer, Traviora</span>
               </div>
             </div>
@@ -304,9 +308,7 @@
                   dengan usaha yang saya bangun di sekolah.
                 </p>
 
-                <p class="font-weight-bold text-center mb-0">
-                  ALFIAN JAUHARI
-                </p>
+                <p class="font-weight-bold text-center mb-0">ALFIAN JAUHARI</p>
                 <span class="text-muted">Web Developer, Traviora</span>
               </div>
             </div>
@@ -338,30 +340,63 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-md-4">
-            <img src="assets/img/logo.png" alt="logo" height="70px" class="mb-3">
+            <img
+              src="assets/img/logo.png"
+              alt="logo"
+              height="70px"
+              class="mb-3"
+            />
             <h3>SMKN DARUL ULUM MUNCAR</h3>
 
             <ul>
               <li>
                 <i>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
                   </svg>
                 </i>
                 Sumber beras, Kec. Muncar, Kab. Banyuwangi
               </li>
               <li>
                 <i>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                    />
                   </svg>
                 </i>
                 info@smkndu-muncar.sch.id
               </li>
               <li>
                 <i>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    />
                   </svg>
                 </i>
                 0333-7654273
@@ -372,32 +407,60 @@
           <div class="col-md-3 offset-md-1">
             <h3>Kontak Panitia</h3>
             <p>
-              Adam : 08112345689 <br>
-              Rizal : 08112345689 <br>
-              Fanny :  08112345689 <br>
+              Adam : 08112345689 <br />
+              Rizal : 08112345689 <br />
+              Fanny : 08112345689 <br />
               Roni : 08123456789
             </p>
           </div>
           <div class="col-md-4">
             <h3>Peta Lokasi</h3>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.184540429414!2d114.33078091460325!3d-8.48142999390182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fceaaaaaaaab%3A0x5b79c57b0f9bcac0!2sSMKN%20Darul%20Ulum!5e0!3m2!1sid!2sid!4v1616725024837!5m2!1sid!2sid" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.184540429414!2d114.33078091460325!3d-8.48142999390182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fceaaaaaaaab%3A0x5b79c57b0f9bcac0!2sSMKN%20Darul%20Ulum!5e0!3m2!1sid!2sid!4v1616725024837!5m2!1sid!2sid"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
 
       <div class="text-center py-3">
         <div class="container">
-          <span class="text-muted">
-            Copyright @2020 SMKNDU Muncar
-          </div>
+          <span class="text-muted"> Copyright @2020 SMKNDU Muncar </span>
         </div>
       </div>
     </footer>
 
+    <a
+      href="#"
+      class="back-to-top"
+      style="
+        display: none;
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        z-index: 996;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        fill="silver"
+        class="bi bi-arrow-up-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+        /></svg>
+      </a>
+
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <script
@@ -410,5 +473,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
